@@ -5,7 +5,6 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function bootstrap() {
-
   try {
     await prisma.$connect();
     console.log('✅ Connected to database');

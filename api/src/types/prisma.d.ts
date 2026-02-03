@@ -5,7 +5,7 @@ declare module '@prisma/client' {
     constructor(...args: any[]);
     $connect(): Promise<void>;
     $disconnect(): Promise<void>;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     [key: string]: any;
   }
   export const Prisma: any;
