@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { PrismaClient } from '@prisma/client';
+import { Logger } from '@nestjs/common';
 
 const prisma = new PrismaClient();
 
@@ -13,6 +14,12 @@ async function bootstrap() {
   }
 
   const app = await NestFactory.create(AppModule);
+
+  app.setGlobalPrefix('api/v1');
+
   await app.listen(process.env.PORT ?? 3000);
 }
-void bootstrap();
+bootstrap().catch((err) => {
+  Logger.error('❌ Application failed to start', err);
+  process.exit(1);
+});

@@ -1,0 +1,32 @@
+{
+  "cSpell.words": [
+    "IsEmail",
+    "IsString",
+    "MinLength",
+    "MaxLength",
+    "IsOptional",
+    "IsNotEmpty",
+    "IsNumber",
+    "IsBoolean",
+    "IsArray",
+    "IsDate",
+    "IsUUID",
+    "ValidateNested",
+    "Matches",
+    "IsMatches",
+    "class-validator",
+    "Please",
+    "provide",
+    "valid",
+    "address"
+  ],
+  "cSpell.enabledLanguageIds": [
+    "typescript",
+    "javascript",
+    "json",
+    "markdown",
+    "plaintext"
+  ],
+  "cSpell.enabled": true,
+  "cSpell.language": "en,ro"
+}

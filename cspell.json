@@ -1,0 +1,28 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "words": [
+    "IsEmail",
+    "IsString",
+    "MinLength",
+    "MaxLength",
+    "IsOptional",
+    "IsNotEmpty",
+    "IsNumber",
+    "IsBoolean",
+    "IsArray",
+    "IsDate",
+    "IsUUID",
+    "ValidateNested",
+    "Matches",
+    "Type"
+  ],
+  "patterns": [
+    {
+      "name": "decorator",
+      "pattern": "/@[A-Za-z][A-Za-z0-9]*(?=\\s*\\(|\\s*$)/g",
+      "description": "Ignore TypeScript/JS decorators like @IsEmail()"
+    }
+  ],
+  "ignoreRegExpList": ["decorator"]
+}
